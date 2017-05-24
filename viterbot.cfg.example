@@ -1,0 +1,7 @@
+server=irc.twitch.tv
+nick=johndisandonato
+name=johndisandonato
+pass=here your oauth token
+chan=#johndisandonato
+secret=your app secret
+clientid=your client id

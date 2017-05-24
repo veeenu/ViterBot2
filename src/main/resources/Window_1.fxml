@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="480.0" prefWidth="920.0" stylesheets="@Window.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stream.johndisandonato.viterbot.ui.WindowController">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane>
+               <center>
+                  <ListView fx:id="chatList" prefWidth="720.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <TextField fx:id="chatMsg" onKeyPressed="#onChatMsgKeyPressed" promptText="&gt;" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+            <BorderPane>
+               <center>
+                  <ListView fx:id="viewersList" />
+               </center>
+               <bottom>
+                  <Label fx:id="viewerCount" alignment="CENTER" text="MEMES" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
